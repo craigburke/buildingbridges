@@ -15,24 +15,25 @@ a {
 }
 
 h1, h2, h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family:'Open Sans Condensed', sans-serif;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 65px;
     color: #000000;
     text-transform: uppercase;
+    padding: .5em 0;
 }
 
 h2 {
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     text-shadow: 1px 1px 1px rgba(0,0,0,.7);
 }
 
 h3 {
     color: white;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 p {
@@ -45,11 +46,6 @@ p {
 
 #intro {
     background: #f9c905;
-}
-
-#intro h1 {
-    padding: .5em 0;
-    float: left;
 }
 
 #intro img {

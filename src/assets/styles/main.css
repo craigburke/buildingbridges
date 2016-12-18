@@ -1,0 +1,105 @@
+/*
+*= require /bootstrap/css/bootstrap
+*= require /font-awesome/css/font-awesome
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #374252;
+    letter-spacing: .1em;
+}
+
+a {
+    color: #6498c8;
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+}
+
+h3 {
+    color: white;
+    font-size: 22px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#intro, #downloads, #about {
+    padding: 3em 10%;
+}
+
+#intro {
+    background: #f9c905;
+}
+
+#intro h1 {
+    padding: .5em 0;
+    float: left;
+}
+
+#intro img {
+    height: 300px;
+    float: right;
+}
+
+#intro {
+    background: #f9c905;
+}
+
+#about {
+    background: #f9c905;
+}
+
+#downloads {
+    background: #FFFFFF;
+}
+
+#downloads h2,
+#downloads h3 {
+    color: #374251;
+    text-shadow: none;
+}
+
+#downloads .download {
+    width: 33%;
+    float: left;
+}
+
+#downloads .download img {
+    width: 80%;
+    box-shadow: 2px 2px 6px #000;
+}
+
+.download .btn-primary {
+    margin-right: 1%;
+}
+
+.download .btn-primary {
+    margin-top: 1em;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #6498c8 !important;
+    padding: .75em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #78b5f4 !important;
+}

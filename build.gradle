@@ -1,0 +1,49 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.craigburke.gradle:client-dependencies:1.3.1'
+        classpath 'com.bertramlabs.plugins:asset-pipeline-gradle:2.8.2'
+        classpath 'org.ajoberstar:gradle-git:1.5.1'
+    }
+}
+
+apply plugin: 'application'
+apply plugin: 'asset-pipeline'
+apply plugin: 'com.craigburke.client-dependencies'
+apply plugin: 'org.ajoberstar.github-pages'
+
+ext {
+    githubRepoUri = 'https://github.com/craigburke/buildingbridges.git'
+}
+
+clientDependencies {
+    npm {
+        'bootstrap'('3.3.6') {
+            exclude 'js/**'
+        }
+        'font-awesome'('4.4.0') {
+            include 'css/**', 'fonts/**'
+        }
+    }
+}
+
+githubPages {
+    repoUri = project.githubRepoUri
+
+    credentials {
+        username = project.hasProperty('githubToken') ? project.githubToken : ''
+        password = ''
+    }
+
+    pages {
+        from assetCompile.destinationDir
+    }
+}
+
+publishGhPages.dependsOn assetCompile
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.2.1'
+}

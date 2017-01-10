@@ -18,11 +18,9 @@ h1, h2, h3 {
     font-family:'Open Sans Condensed', sans-serif;
 }
 
-h1 {
-    font-size: 65px;
-    color: #000000;
-    text-transform: uppercase;
-    padding: .5em 0;
+h1 img {
+    max-width: 100%;
+    height: auto;
 }
 
 h2 {
@@ -44,21 +42,22 @@ p {
     padding: 3em 10%;
 }
 
-#intro {
-    background: #f9c905;
+#banner {
+    padding: 0;
+    padding-top: 2em;
+    background: #fdcc03;
 }
 
-#intro img {
-    height: 300px;
-    float: right;
+#banner div {
+    padding: 0;
 }
 
 #intro {
-    background: #f9c905;
+    background: #fdcc03;
 }
 
 #about {
-    background: #f9c905;
+    background: #fdcc03;
 }
 
 #downloads {
